@@ -3,7 +3,6 @@ package com.Bankers.banking_app.mapper;
 import com.Bankers.banking_app.dto.AccountDto;
 import com.Bankers.banking_app.model.Account;
 //Account Mapper
-
 public class AccountMapper {
     public static Account mapToAccount(AccountDto accountDto) {
     	 if (accountDto == null) {

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+   name:banking-app
+spec:
+ selector:
+    matchLabels:
+       app:banking-app
+    replicas: 3
+    template:
+     metadata:
+      labels:
+       app: banking-app
+     spec:
+       containers:
+         name: banking-app
+         image: banking-app
+         imagePullPolicy: IfNotPresent
+         ports:
+             -containerPort: 8080
+         
+    
